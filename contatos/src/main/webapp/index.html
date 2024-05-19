@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+	<title>Ama Patas</title>
+</head>
+<body>
+	<header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="imagens\logo.png" alt="Logo" class="logo-imagem"/></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/amapatas/" class="nav-link inter-font">Instagram</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/amapatas/" class="nav-link inter-font">Facebook</a></li>
+                    <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja um parceiro!</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="main" ><button class="inter-font">Entrar</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onClick={menuShow}><i class="fa-solid fa-bars icon"></i></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                    <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/amapatas/" class="nav-link inter-font">Instagram</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/amapatas/" class="nav-link inter-font">Facebook</a></li>
+                    <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja um parceiro!</a></li>
+            </ul>
+
+            <div class="login-button">
+                <a href="#" class="inter-font"><button>Entrar</button></a>
+            </div>
+        </div>
+
+    </header>
+
+        <main>
+            <section class="slider">
+                <div class="slides">
+                    <!--Colocar slider aqui-->
+                </div>
+                
+            </section> 
+            <section class="explicandoAdocao">
+
+                <div class="tituloPrincipal">
+                    <img id="pata1" src="imagens/pata.png"></img>
+                    <h1 id="melhorAmigo">ENCONTRE SEU <span>MELHOR AMIGO!</span></h1>
+                    <img id="pata2" src="imagens/pata.png"></img>
+                </div>
+
+                <div class="textoExplicativo inter-font">
+
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"><h2>Sobre nosso grupo</h2></div>
+                        <div class="textoCuriosidades">
+                            <p>Fundada em Atibaia no ano de 2001, a ONG Ama Patas é um dos maiores grupos de resgate e adoção de cães e gatos da região Bragantina.</p>
+                        </div>
+                    </div>
+
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"><h2>Animais resgatados</h2></div>
+                        <div class="textoCuriosidades">
+                            <p>Já resgatamos e doamos ao longo dos anos mais de 5 mil animais e atualmente estamos com <span></span> deles esperando uma família 🥰</p>
+                        </div>
+                    
+                    </div>
+
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"><h2>Aceitamos doações como:</h2></div>
+                        <div class="textoCuriosidades" id="listaDoacoes">
+                            <ul>
+
+                                <li>Toalhas</li>
+								<li>Cobertores</li>
+								<li>Produtos de limpeza</li>
+								<li>Ração</li>
+								<li>Medicamentos</li>
+								<li>Shampoo de cachorro</li>
+                                <li>Doações monetárias de qualquer valor</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="curiosidades">
+                        <div class="tituloCuriosidades"><h2>Apadrinhe!</h2></div>
+                        <div class="textoCuriosidades">
+                            <p>Caso não possa adotar mas ama os bixinhos, 
+                            ou simplesmente quer ajudar. Com o apadrinhamento, 
+                            você colabora com as despesas de um amiguinho 
+                            (Ração, remédios, veterinário...), podendo visitá-lo 
+                            e receber fotos e notícias dele sempre que quiser!</p></div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="card-area">
+                <a href="novo.html" class="Botao1" target="_blank" alt="Área adoção" title="Área adoção">
+                <div class="texto-cartas">
+                    <img src="imagens/dogIcon.png" ></img>
+                    <h1>VEJA SEU FUTURO AMIGO AQUI!</h1>
+                    <img src="imagens/catIcon.png" ></img>
+                </div>
+
+                <div class="card-group">
+                    
+                    <div class="little-card card">
+        
+                    </div>
+                    <div class="big-card card">
+        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                        
+                    </div>
+                    <div class="little-card card">
+                        
+                    </div>
+                    <div class="big-card card">
+                    
+                    </div>
+                    <div class="emojis">
+                        <ul>
+                            <li>😻</li>
+                            <li>🐶</li>
+                            <li>🐕</li>
+                            <li>🐈</li>
+                            <li>❤️</li>
+                            <li>🥰</li>
+                            <li>😼</li>
+                            <li>🦴</li>
+                            <li>🧶</li>
+                            <li>🐾</li>
+                        </ul>
+                    </div>                    
+                </div>
+                </a>
+            </div>
+        
+            
+        </main>
+        <footer class="footer inter-font">
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <h1>Logo</h1>
+                        <p>Cuidando e protegendo nossos amiguinhos!</p>
+
+                        <div id="footer_social_media">
+
+                            <a href="https://www.instagram.com/amapatas/" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/amapatas/?locale=pt_BR" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Saiba mais:</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Sobre a Ama Patas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Nossos parceiros</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Perguntas frequentes</a>
+                        </li> 
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Como ajudar?</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Quero adotar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Quero doar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Quero apadrinhar</a>
+                        </li> 
+                    </ul>
+
+                    <div id="footer-email">
+                        <h3>Fique por dentro!</h3>
+
+                        <p>Cadastre seu e-mail para receber notificações sobre eventos e novos animais para adoção!</p>
+
+                        <div id="input-group">
+                            <input type="email" id="email"></input>
+                            <button>
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer-copyright">
+                    <p>&copy; Ama Patas 2024</p>
+                </div>
+            </footer>
+</body>
+</html>
