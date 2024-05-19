@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" type="image/png" href="imagens/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<title>Ama Patas</title>
 </head>
 <body>
@@ -21,9 +22,9 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
-                    <li class="nav-item"><a href="https://www.instagram.com/amapatas/" class="nav-link inter-font">Instagram</a></li>
-                    <li class="nav-item"><a href="https://www.facebook.com/amapatas/" class="nav-link inter-font">Facebook</a></li>
-                    <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja um parceiro!</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/amapatas/" target="_blank" class="nav-link inter-font">Instagram</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/amapatas/" target="_blank" class="nav-link inter-font">Facebook</a></li>
+                    <li class="nav-item"><a href="novo.html" target="_blank" class="nav-link inter-font">Seja parceiro!</a></li>
                 </ul>
             </div>
 
@@ -32,7 +33,7 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onClick={menuShow}><i class="fa-solid fa-bars icon"></i></button>
+                <button onclick="menuShow()"><i class="fa-solid fa-bars icon"></i></button>
             </div>
         </nav>
 
@@ -41,7 +42,7 @@
                     <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
                     <li class="nav-item"><a href="https://www.instagram.com/amapatas/" class="nav-link inter-font">Instagram</a></li>
                     <li class="nav-item"><a href="https://www.facebook.com/amapatas/" class="nav-link inter-font">Facebook</a></li>
-                    <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja um parceiro!</a></li>
+                    <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja parceiro!</a></li>
             </ul>
 
             <div class="login-button">
@@ -53,10 +54,38 @@
 
         <main>
             <section class="slider">
-                <div class="slides">
-                    <!--Colocar slider aqui-->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slider-img">
+                                <img src="imagens/cao1.png" alt="Foto 01">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-img">
+                                <img src="imagens/cao_e_gato.png" alt="Foto 02">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-img">
+                                <img src="imagens/gato_carinho.png" alt="Foto 03">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-img">
+                                <img src="imagens/cao_na_cama.png" alt="Foto 04">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                    
                 </div>
-                
             </section> 
             <section class="explicandoAdocao">
 
@@ -237,5 +266,9 @@
                     <p>&copy; Ama Patas 2024</p>
                 </div>
             </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="swiper.js"></script>
+            <script src="nav-bar-mobile.js"></script>
 </body>
 </html>
