@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Contatos dos apoiadores</title>
-<link rel="icon" href="imagens/coracao.png">
-<link rel="stylesheet" href="style.css">
+<link rel="icon" href="imagens/icon.png">
+<link rel="stylesheet" href="novo.css">
 </head>
 <body>
 	<h1>Editar contato</h1>
