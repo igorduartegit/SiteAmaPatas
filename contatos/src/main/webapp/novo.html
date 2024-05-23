@@ -22,7 +22,7 @@
 
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
+                    <li class="nav-item"><a href="animais.html" class="nav-link inter-font">Adotar</a></li>
                     <li class="nav-item"><a href="https://www.instagram.com/amapatas/" target="_blank" class="nav-link inter-font">Instagram</a></li>
                     <li class="nav-item"><a href="https://www.facebook.com/amapatas/" target="_blank" class="nav-link inter-font">Facebook</a></li>
                     <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja parceiro!</a></li>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="login-button">
-                <a href="main" ><button class="inter-font">Entrar</button></a>
+                <a href="login.html" ><button class="inter-font">Entrar</button></a>
             </div>
 
             <div class="mobile-menu-icon">
@@ -40,14 +40,14 @@
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="" class="nav-link inter-font">Adotar</a></li>
+                <li class="nav-item"><a href="animais.html" class="nav-link inter-font">Adotar</a></li>
                 <li class="nav-item"><a href="https://www.instagram.com/amapatas/" class="nav-link inter-font">Instagram</a></li>
                 <li class="nav-item"><a href="https://www.facebook.com/amapatas/" class="nav-link inter-font">Facebook</a></li>
                 <li class="nav-item"><a href="novo.html" class="nav-link inter-font">Seja parceiro!</a></li>
             </ul>
 
             <div class="login-button">
-                <a href="#" class="inter-font"><button>Entrar</button></a>
+                <a href="login.html" class="inter-font"><button>Entrar</button></a>
             </div>
         </div>
 
@@ -57,7 +57,7 @@
 			<div class="texto-registro">
 				<h2 id="titulo-registro inter-font">Quer ajudar de outra forma?</h2>
 				<h1 id="titulo-registro inter-font">Deixe seu contato!</h1>
-				<p class="inter-font">Nossas principais fontes de contato são o <a href="https://www.facebook.com/amapatas/?locale=pt_BR" target="_blank">facebook</a> e <a href="https://www.instagram.com/amapatas/" target="_blank">instagram</a>, caso precise entrar em contato de outra forma deixe seu contato aqui!</p>
+				<p class="inter-font" id="texto-registro">Nossas principais fontes de contato são o <a id="link-texto" href="https://www.facebook.com/amapatas/?locale=pt_BR" target="_blank">facebook</a> e <a id="link-texto" href="https://www.instagram.com/amapatas/" target="_blank">instagram</a>, caso precise entrar em contato de outra forma deixe seu contato aqui!</p>
 			</div>
 			<form name="frmContato" action="insert">
 				<table class="formulario">
@@ -73,8 +73,21 @@
 					<td><input type="text" name="email" placeholder="E-mail" class="Caixa1"></td>
 					</tr>
 					<tr>
-					<td><input type="text" name="apoiador" placeholder="Apoiar (Doar, adotar ou apadrinhar)"
-					class="Caixa2"></td>
+					<td>
+						<input type="text" name="apoiador" placeholder="Apoiar (Doar, adotar ou apadrinhar)"
+					class="Caixa2">
+					<!-- <div>
+						<input type="checkbox" name="apoiador" id="checkbox-adotar">
+						<label for="checkbox-adotar">Adotar</label>
+						<input type="checkbox" name="apoiador" id="checkbox-doar">
+						<label for="checkbox-doar">Doar</label>
+						<input type="checkbox" name="apoiador" id="checkbox-apadrinhar">
+						<label for="checkbox-apadrinhar">Apadrinhar</label>
+						<input type="checkbox" name="apoiador" id="checkbox-outro">
+						<label for="checkbox-outro">Outro</label>
+					</div> -->
+
+					</td>
 					</tr>
 				</table>
 				<input type="button" value="Enviar" class="Botao1" onclick="validar()">
@@ -110,14 +123,9 @@
 					<h3>Saiba mais:</h3>
 				</li>
 				<li>
-					<a href="#" class="footer-link">Sobre a Ama Patas</a>
+					<a href="sobre.html" class="footer-link">Sobre a Ama Patas</a>
 				</li>
-				<li>
-					<a href="#" class="footer-link">Nossos parceiros</a>
-				</li>
-				<li>
-					<a href="#" class="footer-link">Perguntas frequentes</a>
-				</li> 
+				
 			</ul>
 
 			<ul class="footer-list">
@@ -125,13 +133,13 @@
 					<h3>Como ajudar?</h3>
 				</li>
 				<li>
-					<a href="#" class="footer-link">Quero adotar</a>
+					<a href="animais.html" class="footer-link">Quero adotar</a>
 				</li>
 				<li>
-					<a href="#" class="footer-link">Quero doar</a>
+					<a href="novo.html" class="footer-link">Quero doar</a>
 				</li>
 				<li>
-					<a href="#" class="footer-link">Quero apadrinhar</a>
+					<a href="novo.html" class="footer-link">Quero apadrinhar</a>
 				</li> 
 			</ul>
 
@@ -154,5 +162,6 @@
 		</div>
 	</footer>
 	<script src="scripts/validador.js"></script>
+	<script src="nav-bar-mobile.js"></script>
 </body>
 </html>

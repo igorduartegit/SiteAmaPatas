@@ -16,7 +16,9 @@
 		alert('Preencha o campo Telefone')
 		frmContato.fone.focus()
 		return false
-	} else if (!apoiador.includes("adotar") && !apoiador.includes("doar") && !apoiador.includes("apadrinhar")) {
+	} else if (!apoiador.includes("adotar") && !apoiador.includes("doar")
+		 && !apoiador.includes("apadrinhar") && !apoiador.includes("Adotar")
+		 && !apoiador.includes("Doar") && !apoiador.includes("Apadrinhar")) {
 	alert('Você deve escolher entre "Doar", "Adotar" ou "Apadrinhar')
 		frmContato.apoiador.focus()
 		return false

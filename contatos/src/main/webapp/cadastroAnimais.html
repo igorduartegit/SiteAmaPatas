@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animais para Adoção</title>
+    <!-- ligação com com o css -->
+    <link rel="stylesheet" href="cadastroAnimais.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Animais para Adoção</h1>
+    </header>
+    <main>
+        <!-- formulario de cadastro -->
+        <form id="animalForm">
+            <label for="name">Nome do Animal:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="breed">Raça:</label>
+            <input type="text" id="breed" name="breed" required>
+            
+            <label for="photo">Foto:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+            <!-- botão de cadastro que busca a função no javascript -->   
+            <button type="submit">Cadastrar Animal</button>
+        </form>
+        
+        <section id="animalList">
+            <h2>Animais Cadastrados</h2>
+            <div id="animals"></div>
+        </section>
+    </main>
+    <!-- ligação com com o javascript -->
+    <script src="cadastroAnimais.js"></script>
+</body>
+</html>

@@ -33,7 +33,9 @@ h1{
 	font-size: 50px;
 	font-family: "Lobster Two","lobster";
 }
-
+#link-texto{
+	color: hsl(347, 100%, 73%);
+}
 .Botao1 {
 	text-decoration: none;
 	background-color:hsl(347, 100%, 73%);
@@ -48,7 +50,7 @@ h1{
 
 .Botao2 {
 	text-decoration: none;
-	background-color: hsl(0, 100%, 61%);
+	background-color: hsl(347, 100%, 73%);
 	padding: 5px 10px 5px 10px;
 	color: #fff;
 	font-size:1.2em;
@@ -60,7 +62,7 @@ h1{
 	width: 320px;
 	padding: 5px;
 	margin-bottom: 10px;
-	border: 2px solid hsl(0, 100%, 61%);
+	border: 2px solid hsl(347, 100%, 73%);
 	border-radius: 5px;
 }
 
@@ -68,14 +70,14 @@ h1{
 	width: 320px;
 	padding: 5px;
 	margin-bottom: 10px;
-	border: 2px solid hsl(0, 100%, 61%);
+	border: 2px solid hsl(347, 100%, 73%);
 	border-radius: 5px;
 }
 
 #caixa3 {
 	padding: 5px;
 	margin-bottom: 10px;
-	border: 1px solid hsl(0, 100%, 61%);
+	border: 1px solid hsl(347, 100%, 73%);
 }
 
 #tabela {
@@ -87,7 +89,7 @@ h1{
 	border: 1px solid #ddd;
 	padding: 10px;
 	text-align: Left;
-	background-color: hsl(0, 100%, 61%);
+	background-color: hsl(347, 100%, 73%);
 	color: #fff;
 }
 
